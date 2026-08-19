@@ -1,5 +1,5 @@
 mountpoints:
   /:
-    url: "https://author-p208405-e2181056.adobeaemcloud.com/bin/franklin.delivery/JSW-Motors/jsw-motors-eds/main"
+    url: "https://author-p208405-e2181056.adobeaemcloud.com/bin/franklin.delivery/eds-as-2026/jsw-motors-eds-main/main"
     type: "markup"
     suffix: ".html"
