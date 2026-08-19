@@ -1,20 +1,178 @@
+/* Import component-specific tokens */
+@import url('./footer-tokens.css');
+
+/* footer block styles */
 footer {
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-xs);
+  background-color: var(--footer-background);
+  font-family: var(--footer-body-font-family);
+  font-size: var(--footer-body-font-size);
 }
 
 footer .footer > div {
   margin: auto;
-  max-width: 1200px;
-  padding: 40px 24px 24px;
+  max-width: var(--footer-max-width);
+  padding: var(--footer-padding-top) var(--footer-padding-right) var(--footer-padding-bottom) var(--footer-padding-left);
+  border-top: var(--footer-divider-width) var(--footer-divider-style) var(--footer-divider-color);
 }
 
 footer .footer p {
   margin: 0;
 }
 
+/* Top region: brand meta + link columns */
+footer .footer-top {
+  display: flex;
+  flex-direction: column;
+  gap: var(--footer-row-gap);
+}
+
+/* Brand meta */
+footer .footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: var(--footer-brand-gap);
+}
+
+footer .footer-brand h1,
+footer .footer-brand h2,
+footer .footer-brand h3,
+footer .footer-brand h4,
+footer .footer-brand h5,
+footer .footer-brand h6 {
+  margin: 0;
+  font-family: var(--footer-brand-font-family);
+  font-size: var(--footer-brand-font-size);
+  font-weight: var(--footer-brand-font-weight);
+  font-style: var(--footer-brand-font-style);
+  line-height: var(--footer-brand-line-height);
+  letter-spacing: var(--footer-brand-letter-spacing);
+  text-transform: var(--footer-brand-text-transform);
+  color: var(--footer-brand-color);
+}
+
+footer .footer-brand p {
+  font-family: var(--footer-meta-font-family);
+  font-size: var(--footer-meta-font-size);
+  font-weight: var(--footer-meta-font-weight);
+  line-height: var(--footer-meta-line-height);
+  color: var(--footer-meta-color);
+}
+
+/* Link columns */
+footer .footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--footer-sitemap-gap);
+}
+
+footer .footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: var(--footer-column-item-gap);
+  min-width: var(--footer-column-width);
+}
+
+footer .footer-column h1,
+footer .footer-column h2,
+footer .footer-column h3,
+footer .footer-column h4,
+footer .footer-column h5,
+footer .footer-column h6 {
+  margin: 0;
+  font-family: var(--footer-heading-font-family);
+  font-size: var(--footer-heading-font-size);
+  font-weight: var(--footer-heading-font-weight);
+  font-style: var(--footer-heading-font-style);
+  line-height: var(--footer-heading-line-height);
+  letter-spacing: var(--footer-heading-letter-spacing);
+  text-transform: var(--footer-heading-text-transform);
+  color: var(--footer-heading-color);
+}
+
+footer .footer-column ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--footer-column-item-gap);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer .footer-column li {
+  margin: 0;
+  line-height: var(--footer-body-line-height);
+}
+
+footer .footer-column a {
+  font-family: var(--footer-body-font-family);
+  font-size: var(--footer-body-font-size);
+  font-weight: var(--footer-body-font-weight);
+  font-style: var(--footer-body-font-style);
+  line-height: var(--footer-body-line-height);
+  letter-spacing: var(--footer-body-letter-spacing);
+  color: var(--footer-link-color);
+  text-decoration: none;
+  transition: color var(--footer-transition-duration) var(--footer-transition-timing);
+}
+
+/* Legal line */
+footer .footer-legal {
+  margin-top: var(--footer-legal-margin-top);
+}
+
+footer .footer-legal p {
+  font-family: var(--footer-legal-font-family);
+  font-size: var(--footer-legal-font-size);
+  font-weight: var(--footer-legal-font-weight);
+  line-height: var(--footer-legal-line-height);
+  letter-spacing: var(--footer-legal-letter-spacing);
+  color: var(--footer-legal-color);
+}
+
+footer .footer-legal a {
+  color: var(--footer-legal-color);
+  text-decoration: none;
+  transition: color var(--footer-transition-duration) var(--footer-transition-timing);
+}
+
+/* Link hover states */
+footer .footer-column a:hover,
+footer .footer-column a:focus-visible,
+footer .footer-legal a:hover,
+footer .footer-legal a:focus-visible {
+  color: var(--footer-link-hover-color);
+  text-decoration: none;
+}
+
+/* Oversized brand wordmark */
+footer .footer-wordmark {
+  margin-top: var(--footer-wordmark-margin-top);
+  font-family: var(--footer-wordmark-font-family);
+  font-size: var(--footer-wordmark-font-size);
+  font-weight: var(--footer-wordmark-font-weight);
+  font-style: var(--footer-wordmark-font-style);
+  line-height: var(--footer-wordmark-line-height);
+  letter-spacing: var(--footer-wordmark-letter-spacing);
+  text-transform: var(--footer-wordmark-text-transform);
+  color: var(--footer-wordmark-color);
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* Tablet / desktop: brand left, columns pushed right on one row */
 @media (width >= 900px) {
   footer .footer > div {
-    padding: 40px 32px 24px;
+    padding: var(--footer-padding-top) var(--footer-padding-right-desktop) var(--footer-padding-bottom) var(--footer-padding-left-desktop);
+  }
+
+  footer .footer-top {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  footer .footer-columns {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
   }
 }

@@ -1,0 +1,92 @@
+/* blocks/footer/footer-tokens.css */
+
+/* ⚠️ ALL values extracted from footer-measurements.txt (Figma node 1:29) */
+footer {
+  /* ===== LAYOUT & DIMENSIONS ===== */
+  --footer-max-width: 1200px;
+  --footer-padding-top: 40px;
+  --footer-padding-right: 24px;
+  --footer-padding-bottom: 24px;
+  --footer-padding-left: 24px;
+  --footer-padding-right-desktop: 32px;
+  --footer-padding-left-desktop: 32px;
+  --footer-sitemap-gap: 42px;
+  --footer-column-item-gap: 10px;
+  --footer-brand-gap: 13px;
+  --footer-columns: 3;
+  --footer-column-width: 155px;
+  --footer-row-gap: 40px;
+
+  /* ===== CONTAINER COLORS ===== */
+  --footer-background: #fff;
+
+  /* ===== BORDERS ===== */
+  --footer-divider-width: 1px;
+  --footer-divider-style: solid;
+  --footer-divider-color: rgb(20 20 20 / 10%);
+  --footer-item-border-radius: 0;
+
+  /* ===== SHADOWS ===== */
+  --footer-item-shadow: none;
+
+  /* ===== TYPOGRAPHY - BRAND NAME ===== */
+  --footer-brand-font-family: var(--heading-font-family);
+  --footer-brand-font-size: 16px;
+  --footer-brand-font-weight: 500;
+  --footer-brand-font-style: normal;
+  --footer-brand-line-height: 19px;
+  --footer-brand-letter-spacing: 0;
+  --footer-brand-text-transform: none;
+  --footer-brand-color: #090909;
+
+  /* ===== TYPOGRAPHY - COLUMN HEADINGS ===== */
+  --footer-heading-font-family: var(--heading-font-family);
+  --footer-heading-font-size: 14px;
+  --footer-heading-font-weight: 500;
+  --footer-heading-font-style: normal;
+  --footer-heading-line-height: 18px;
+  --footer-heading-letter-spacing: 0;
+  --footer-heading-text-transform: none;
+  --footer-heading-color: #141414;
+
+  /* ===== TYPOGRAPHY - BODY / LINKS ===== */
+  --footer-body-font-family: var(--body-font-family);
+  --footer-body-font-size: 13px;
+  --footer-body-font-weight: 400;
+  --footer-body-font-style: normal;
+  --footer-body-line-height: 17px;
+  --footer-body-letter-spacing: 0;
+  --footer-link-color: rgb(20 20 20 / 62%);
+  --footer-link-hover-color: #090909;
+
+  /* ===== TYPOGRAPHY - META (copyright / location) ===== */
+  --footer-meta-font-family: var(--body-font-family);
+  --footer-meta-font-size: 13px;
+  --footer-meta-font-weight: 400;
+  --footer-meta-line-height: 18px;
+  --footer-meta-color: rgb(31 31 31 / 64%);
+
+  /* ===== TYPOGRAPHY - LEGAL ===== */
+  --footer-legal-font-family: var(--body-font-family);
+  --footer-legal-font-size: 12px;
+  --footer-legal-font-weight: 400;
+  --footer-legal-line-height: 14px;
+  --footer-legal-letter-spacing: 0.12px;
+  --footer-legal-color: rgb(31 31 31 / 62%);
+  --footer-legal-margin-top: 40px;
+
+  /* ===== TYPOGRAPHY - WORDMARK ===== */
+  --footer-wordmark-font-family: var(--heading-font-family);
+  --footer-wordmark-font-size: clamp(48px, 10.7vw, 137px);
+  --footer-wordmark-font-weight: 400;
+  --footer-wordmark-font-style: normal;
+  --footer-wordmark-line-height: 0.92;
+  --footer-wordmark-letter-spacing: -0.03em;
+  --footer-wordmark-text-transform: uppercase;
+  --footer-wordmark-color: #090909;
+  --footer-wordmark-margin-top: 24px;
+
+  /* ===== TRANSITIONS ===== */
+  --footer-transition-duration: 200ms;
+  --footer-transition-timing: ease;
+}
